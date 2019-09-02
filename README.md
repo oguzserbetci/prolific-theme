@@ -24,16 +24,23 @@ Or install it yourself as:
     $ gem install prolific-theme
 
 ## Usage
-1. Put your projects in `/_projects` with a `date` in its front-matter like:
+1. Put your projects in `_data/projects.yml` with a `date` and `description` in its front-matter like:
 
 ``` yaml
 ---
 date: 2018.04.04
 ---
 ```
+2. Put any other page you want in `_stuff/page_name.yml` with a `layout` and `title` in its front-matter like:
 
-2. Put your blog posts in `/_posts` with `YEAR-MONTH-DAY-title.MARKUP` filename format.
-3. Edit the contact information in `_config.yml`.
+``` yaml
+---
+layout: page
+title: page_title
+---
+```
+3. Put your blog posts in `/_posts` with `YEAR-MONTH-DAY-title.MARKUP` filename format.
+4. Edit the contact information in `_config.yml`.:
 
 ## Contributing
 
